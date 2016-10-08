@@ -7,7 +7,7 @@ import org.junit.Test;
 
 
 /**
- * StringUtilsTest
+ * StringUtils 测试类
  * 
  * @author yuxiangtong
  *
