@@ -16,14 +16,14 @@ public class JSONObjectTest {
          * 1.当value=null时,做移除处理
          * 2.当key重复时,value值进行覆盖
          */
-        jsonObject.put("key1", "");
+        jsonObject.put("key0", "");
         jsonObject.put("key2", null);
         jsonObject.put("key3", "value3");
-        jsonObject.put("key1", "value1");
+        jsonObject.put("key0", "value0");
 
         String jsonString = jsonObject.toString();
 
-        String expected = "{\"key1\":\"value1\",\"key3\":\"value3\"}";
+        String expected = "{\"key0\":\"value0\",\"key3\":\"value3\"}";
         assertEquals(expected, jsonString);
 
     }
